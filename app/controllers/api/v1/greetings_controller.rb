@@ -4,7 +4,7 @@ module Api
       def random
         num = Greeting.count
         random_salute = Greeting.offset(rand(num)).first
-        render json: random_salute.greet
+        render json: { salut: random_salute.greet }
       end
     end
   end
