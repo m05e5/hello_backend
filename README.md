@@ -1,24 +1,86 @@
-# README
+# Hello Backend
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![Microverse](https://img.shields.io/badge/Microverse-blueviolet)
 
-Things you may want to cover:
 
-* Ruby version
+## Built With
 
-* System dependencies
+- Ruby on Rails
+- PostgreSQL
+- CSS
 
-* Configuration
+## Front end repo
 
-* Database creation
+- [Hello Frontend](https://github.com/m05e5/hello_frontend)
+## Getting Started
 
-* Database initialization
+To get a local copy up and running follow these simple example steps.
 
-* How to run the test suite
+### Prerequisites
 
-* Services (job queues, cache servers, search engines, etc.)
+- [Ruby](https://www.ruby-lang.org/en/)
+- [Rails](https://gorails.com/)
 
-* Deployment instructions
+### Setup
 
-* ...
+- Make sure you have Ruby on Rails set up properly on your computer
+- Clone or download this repo on your machine
+- Enter project directory
+
+### Install
+
+```sh
+bundle install
+```
+
+### Database
+
+```sh
+# Create user
+sudo -u postgres createuser recipe_app -s
+
+# Create the database
+rails db:create
+
+## Apply migration
+rails db:migrate
+
+# Load the schema
+rails db:schema:load
+```
+
+### Run
+
+```sh
+rails s
+```
+
+### Test
+
+```sh
+rspec specs
+```
+
+### .env
+
+```sh
+GMAIL_USERNAME=your_email@example.com
+GMAIL_PASSWORD=password
+```
+
+## Authors
+
+👤 **Caleb Moses**
+
+- Github: [@m05e5](https://github.com/m05e5)
+- Linkedin: [caleb Moses](https://www.linkedin.com/in/caleb-moses/)
+
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Microverse
+
